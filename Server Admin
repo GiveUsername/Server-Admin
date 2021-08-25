@@ -1,0 +1,1512 @@
+--Character And Chat--
+
+game.Players.LocalPlayer.PlayerGui.CharacterSelection.Character.Value = "Sans"
+
+game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, true)
+
+--Music--
+
+for i,v in pairs(game.Players.LocalPlayer:WaitForChild("StarterPlaylist"):GetChildren()) do
+v:Destroy()
+end
+local music = Instance.new("Sound",game.Players.LocalPlayer:WaitForChild("StarterPlaylist"))
+music.Volume = 1.7
+music.SoundId = "rbxassetid://0"
+music.Looped = true
+music:Play()
+local music = Instance.new("Sound",game.Players.LocalPlayer:WaitForChild("StarterPlaylist"))
+    music.Volume = 3
+    music.SoundId = "rbxassetid://3198129917"
+    music.Looped = true
+    music:Play()
+
+--Customizations--
+
+wait(3.0)
+
+game.Players.LocalPlayer.Character.Head.HealthBar.Frame.PName.Text = "Server Admin"
+game.Players.LocalPlayer.Character.Head.HealthBar.Frame.PName.TextColor3 = Color3.fromRGB(255, 255, 255)
+game.Players.LocalPlayer.PlayerGui.UI.Ui.ManaBar.Bar.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+game.Players.LocalPlayer.PlayerGui.UI.Ui.StaminaBar.Bar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+game.Players.LocalPlayer.Character.Head.HealthBar.Frame.Health.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+game.Players.LocalPlayer.PlayerGui.UI.Ui.Info.Defense.Text = "Defense: 100"
+game.Players.LocalPlayer.PlayerGui.UI.Ui.Info.Attack.Text = "Attack: 100"
+game.Players.LocalPlayer.Character.Head.HealthBar.Frame.HealthLabel.Text = "Inf/Inf"
+
+--Chat Color--
+
+local Player = game.Players.LocalPlayer
+
+Player.Chatted:Connect(function(Chat)
+	wait()
+	local A_1 =  {
+		[1] = getrenv()._G.Pass, 
+		[2] = "Chatted", 
+		[3] = (Chat), 
+		[4] = Color3.fromRGB(255, 255, 255)
+	}
+	local Event = game:GetService("ReplicatedStorage").Remotes.Events
+	Event:FireServer(A_1)
+
+
+
+end)
+
+--Z--
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.Z then
+        local A_1 = 
+            {
+                [1] = getrenv()._G.Pass,
+                [2] = "Chatted", 
+                [3] = "Take this hacker",
+                [4] = Color3.new(255,255,255)
+            }
+        local Event = game:GetService("ReplicatedStorage").Remotes.Events
+        Event:FireServer(A_1)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, 150, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+--X--
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+            {
+                [1] = getrenv()._G.Pass,
+                [2] = "Chatted", 
+                [3] = "Took Health",
+                [4] = Color3.new(255,255,255)
+            }
+        local Event = game:GetService("ReplicatedStorage").Remotes.Events
+        Event:FireServer(A_1)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(0.2)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(0.4)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(0.6)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(0.8)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(1.0)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(1.2)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(1.4)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(1.6)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(1.8)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(2.0)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(2.2)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(2.4)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(2.6)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(2.8)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(3.0)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(3.2)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(3.4)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(3.6)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(3.8)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(4.0)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(4.2)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(4.4)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(4.6)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(4.8)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(5.0)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(5.2)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(5.4)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(5.6)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(5.8)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(6.0)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(6.2)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(6.4)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(6.6)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(6.8)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(7.0)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(7.2)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(7.4)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(7.6)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(7.8)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(8.0)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(8.2)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(8.4)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(8.6)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(8.8)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(9.0)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(9.2)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(9.4)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(9.6)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.X then
+        local A_1 = 
+wait(9.8)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -1, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 10
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+--C--
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.C then
+        local A_1 = 
+            {
+                [1] = getrenv()._G.Pass,
+                [2] = "Chatted", 
+                [3] = ":Fling",
+                [4] = Color3.new(255,255,255)
+            }
+        local Event = game:GetService("ReplicatedStorage").Remotes.Events
+        Event:FireServer(A_1)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Hurt1,
+                ["Velocity"] = Vector3.new(100, -0, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 35
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+--V--
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.V then
+        local A_1 = 
+  {
+                [1] = getrenv()._G.Pass,
+                [2] = "Chatted", 
+                [3] = ":Kill",
+                [4] = Color3.new(255,255,255)
+            }
+        local Event = game:GetService("ReplicatedStorage").Remotes.Events
+        Event:FireServer(A_1)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Knockback",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Knockback2,
+                ["Velocity"] = Vector3.new(-0, -0 -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 1
+            }
+        }
+
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+
+--Phase 2--
+
+repeat wait() until game.Players.LocalPlayer.Character.Data.Stamina.Value <= 1000
+
+game.Players.LocalPlayer.Backpack.Main.WalkSpeed.Value = 70
+game.Players.LocalPlayer.Backpack.Main.RunSpeed.Value = 100
+
+wait(2.5)
+
+local A_1 = 
+{
+    [1] = getrenv()._G.Pass, 
+    [2] = "Chatted", 
+    [3] = "Aight No More Holding Back.",
+    [4] = Color3.fromRGB(255, 255, 255)
+}
+local Event = game:GetService("ReplicatedStorage").Remotes.Events
+Event:FireServer(A_1)
+
+--Music Phase 2--
+
+for i,v in pairs(game.Players.LocalPlayer:WaitForChild("StarterPlaylist"):GetChildren()) do
+v:Destroy()
+end
+local music = Instance.new("Sound",game.Players.LocalPlayer:WaitForChild("StarterPlaylist"))
+music.Volume = 1.7
+music.SoundId = "rbxassetid://0"
+music.Looped = true
+music:Play()
+local music = Instance.new("Sound",game.Players.LocalPlayer:WaitForChild("StarterPlaylist"))
+    music.Volume = 3
+    music.SoundId = "rbxassetid://606241996"
+    music.Looped = true
+    music:Play()
+
+--H--
+
+game.Players.LocalPlayer:GetMouse()
+game:GetService("UserInputService").InputBegan:connect(function(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.H then
+        local A_1 = 
+            {
+                [1] = getrenv()._G.Pass,
+                [2] = "Chatted", 
+                [3] = "I warned you.",
+                [4] = Color3.new(255,255,255)
+            }
+        local Event = game:GetService("ReplicatedStorage").Remotes.Events
+        Event:FireServer(A_1)
+        local args = { 
+            [1] = getrenv()._G.Pass,
+            [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+            [3] = {
+                ["Type"] = "Normal",
+                ["HitEffect"] = "HeavyHitEffect",
+                ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Hurt1,
+                ["Velocity"] = Vector3.new(-0, 1,0, -0),
+                ["HitTime"] = 2.5,
+                ["CombatInv"] = true,
+                ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback,
+                ["Damage"] = 1
+            }
+        }
+
+        game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+
+end
+end)
+
+local mouse = game.Players.LocalPlayer:GetMouse()
+mouse.KeyDown:Connect(function(k) 
+    if k == "h" then 
+wait(2.4)
+local A_1 =
+            {
+                [1] = getrenv()._G.Pass,
+                [2] = "Chatted", 
+                [3] = ":FREEZE", 
+                [4] = Color3.new(255,255,255)
+            }
+        local Event = game:GetService("ReplicatedStorage").Remotes.Events
+        Event:FireServer(A_1)
+local A_1 = getrenv()._G.Pass
+local A_2 = game:GetService("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value
+local A_3 = 
+{
+    ["HitTime"] = 1, 
+    ["Type"] = "Knockback", 
+    ["HitEffect"] = "HeavyHitEffect", 
+    ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Stunned, 
+    ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Knockback, 
+    ["Damage"] = 10
+}
+local Event = game:GetService("ReplicatedStorage").Remotes.Damage
+Event:InvokeServer(A_1, A_2, A_3)
+    end
+end)
